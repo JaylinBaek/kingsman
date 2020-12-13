@@ -1,0 +1,55 @@
+.left {
+	width: 100px; height: 100%;float: left;
+}
+.right {
+	width: 100px; height: 100%; float: right;
+}
+.logo{
+	width: 35%; height: 35%; position:relative;
+	margin: 0 auto;
+}
+.rotate{
+	animation: rotate_image 10s linear infinite;
+	transform-origin: 50% 50%;
+}
+.manner{
+	width: 50%; height: 25%; position:relative;
+	margin: 0 auto;
+}
+.audio{
+	width: 15%; height: 15%; position: relative;
+	top: 0; bottom: 0; left: 0; right: 0; margin: auto;
+	animation: bk
+}
+.blink{
+	-webkit-animation:blink 0.5s ease-in-out infinite alternate;
+	-moz-animation:blink 0.5s ease-in-out infinite alternate;
+	animation: blink 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes rotate_image{
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes blink {
+	0%{opacity: 0}
+	49%{opacity: 0}
+	50%{opacity: 1}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0}
+	49%{opacity: 0}
+	50%{opacity: 1}
+}
+
+@keyframes blink{
+	0% {opacity: 0}
+	49%{opacity: 0}
+	50%{opacity: 1}
+}
+
+body{background:black}
+button{color: white}
